@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kopf oder Zahl?</title>
+
+  <style>
+    h1{
+      color: rgb(156, 117, 17);
+    }
+     body{
+      font-family: Arial;
+    }
+    #btn{
+      width: 100px;
+      height:50px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Arial;
+      background-color: rgb(211, 182, 19);
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom:solid 4px goldenrod;
+    }
+  </style>
+</head>
+<script>
+  function w(){
+    let w=Math.round(Math.random()*1+1);
+    if(w==1){
+      alert("Es ist Kopf geworden, du hast gewonnen!");
+    }else{
+      alert("Es ist Zahl geworden, du hast verloren!");
+
+    }location.reload();
+  }
+  function z(){
+    let w=Math.round(Math.random()*1+1);
+    if(w==1){
+      alert("Es ist Kopf geworden, du hast verloren!");
+    }else{
+      alert("Es ist Zahl geworden, du hast gewonnen!");
+
+    }location.reload();
+  }
+</script>
+<body>
+  <h1>Einfaches Kopf oder Zahl-Spiel </h1>
+  <p>Die Regeln von Kopf oder Zahl sollten klar sein. Wenn Sie auf Kopf drücken nehmen Sie Kopf, wenn Sie auf Zahl drücken nehmen Sie Zahl! </p>
+  <table>
+    <td><div id="image"><img src="Kopf.png" alt=""></div></td>
+    <td><button id="btn" onclick="w()" size="1">Kopf</button></td>
+    <td><button id="btn" onclick="w()" size="1">Zahl</button></td>
+    <td><div id="image"><img src="Zahl.png" alt=""></div></td>
+  </table>
+</body>
+</html>
